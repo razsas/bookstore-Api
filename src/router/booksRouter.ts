@@ -41,8 +41,7 @@ bookRouter.patch("/books/edit", async (req,res)=>{
 				status: 404,
 				message: "wrong id",
 			})
-            console.log(book)
-            
+        console.log(book)    
 		await book.save()
 		res.send(book)
     } catch (err) {
